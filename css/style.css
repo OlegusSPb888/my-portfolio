@@ -7,6 +7,7 @@ body {
 }
 
 .navbar {
+    padding-top: 40px;
     max-width: 870px;
     width: 100%;
     margin: auto;
@@ -117,6 +118,10 @@ body {
     margin-bottom: 40px;
 }
 
+.card-image {
+    max-width: 100%;
+}
+
 .card-text-wrapper {
     padding: 16px;
 }
@@ -159,6 +164,7 @@ body {
     border: 1px solid #dd9c3c;
     border-radius: 4px;
     margin-right: 4px;
+    margin-bottom: 4px;
 }
 
 .card-buttons {
@@ -288,7 +294,7 @@ body {
 .input {
     border: 3px solid #e0dedc;
     border-radius: 4px;
-    width: 435px;
+    width: 100%;
     height: 56px;
 }
 
@@ -324,5 +330,86 @@ body {
 @media (max-width: 1024px) {
     .container {
         max-width: 760px;
+    }
+    .card {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 790px) {
+    .container {
+        max-width: 576px;
+    }
+    .header-photo {
+        max-width: 150px;
+    }
+    .header-strong {
+        font-size: 36px;
+    }
+    .header-heading {
+        font-size: 18px;
+    }
+    .cv-download {
+        margin-left: 15px;
+    }
+    .card {
+        max-width: 45%;
+    }
+    .card-text-wrapper {
+        padding: 8px 0;
+    }
+    .developer  {
+        flex-direction: column;
+    }
+    .developer-photo {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+    .developer-about {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+    .feedback-hand {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+    .header {
+        padding-top: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-links,
+    .cards,
+    .navbar {
+        flex-direction: column;
+    }
+    .cv-download {
+        margin-left: 0;
+    }
+    .card {
+        max-width: 100%;
+    }
+    .tags {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .form-container {
+        width: 90%;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-link{
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 }
