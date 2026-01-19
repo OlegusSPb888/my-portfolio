@@ -327,6 +327,15 @@ body {
     justify-content: flex-end;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    color: #83807C;
+    font-size: 16px;
+    line-height: 150%;
+}
+
 @media (max-width: 1024px) {
     .container {
         max-width: 760px;
@@ -413,3 +422,4 @@ body {
         margin-bottom: 10px;
     }
 }
+
